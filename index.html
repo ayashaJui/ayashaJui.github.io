@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayasha Hossain Jui — Software Engineer</title>
+  <meta name="description" content="Software Engineer building reliable FinTech backends with Java, Spring Boot, and microservices." />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ambient background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand"><span>&lt;</span>AHJ<span>/&gt;</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#publication">Publication</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="kicker">// Software Engineer · Backend &amp; Distributed Systems</p>
+        <h1 class="hero-title">
+          Ayasha<br />Hossain Jui
+        </h1>
+        <p class="hero-sub">
+          I build backend systems where <span class="hl">correctness and concurrency</span>
+          actually matter — live trades, money movement, and real-time market data.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/ayashaJui" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/ayasha-hossain-jui/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://leetcode.com/u/ayashaJui/" target="_blank" rel="noopener">LeetCode</a>
+          <a href="mailto:ayashajui1110@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <p class="section-label">01 — About</p>
+        <h2 class="section-title">Backend engineer, full-stack capable.</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Software Engineer with <strong>3+ years</strong> designing and delivering
+              production-grade systems in the <strong>FinTech</strong> domain. My core is
+              event-driven microservices, real-time data pipelines, and transaction flows that
+              stay correct under concurrency.
+            </p>
+            <p>
+              I also build across the stack — from Spring Boot APIs to Angular, React, and
+              Next.js UIs. I care about clean code, sound architecture, and knowledge sharing.
+            </p>
+          </div>
+          <div class="stats reveal">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">FinTech</span>
+              <span class="stat-label">Securities trading</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">IEEE</span>
+              <span class="stat-label">Published (ICCIT 2022)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <p class="section-label">02 — Experience</p>
+        <h2 class="section-title">Things I've shipped.</h2>
+
+        <!-- To add a role: copy one <article class="case"> block -->
+        <article class="case reveal">
+          <div class="case-top">
+            <h3>PQCal — Live Securities Trading Platform</h3>
+            <span class="case-meta">Dohatec New Media · 2023 – Present</span>
+          </div>
+          <p class="case-desc">
+            Dohatec's first in-house product — a live securities trading platform used in the
+            Bangladeshi market. I contribute across user management, the business-rule engine,
+            financial services, and market analysis.
+          </p>
+          <ul class="case-points">
+            <li>Designed and maintained production Spring Boot microservices with an API gateway, service registry, and config server.</li>
+            <li>Built versioned REST APIs over SQL Server &amp; PostgreSQL with Spring Data JPA / Hibernate, optimized for high-volume data.</li>
+            <li>Implemented RabbitMQ messaging plus OAuth2/JWT authentication across services.</li>
+            <li>Delivered Angular/PrimeNG UI with secure token-based auth flows.</li>
+          </ul>
+          <div class="tags">
+            <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>SQL Server</span>
+            <span>PostgreSQL</span><span>RabbitMQ</span><span>OAuth2</span><span>Angular</span>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <div class="case-top">
+            <h3>PQCal Global — International Trading Platform</h3>
+            <span class="case-meta">Dohatec New Media · Under Development</span>
+          </div>
+          <p class="case-desc">
+            International expansion of PQCal for markets outside Bangladesh, with live paper
+            trading powered by CME data feeds. I lead the market-data and financial services.
+          </p>
+          <ul class="case-points">
+            <li>Built the market-data service, consuming real-time data from Kafka topics and exposing REST APIs that drive live views in the UI.</li>
+            <li>Built the financial service handling all balance credits/debits with atomic, idempotent, concurrency-safe updates.</li>
+            <li>Set up the full microservices infrastructure (registry, config server, API gateway) with RabbitMQ for event-driven communication.</li>
+            <li>Integrating CME (Chicago Mercantile Exchange) data feeds for real-time paper trading.</li>
+          </ul>
+          <div class="tags">
+            <span>Java</span><span>Spring Boot</span><span>Kafka</span><span>RabbitMQ</span>
+            <span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>Angular</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="section-label">03 — Projects</p>
+        <h2 class="section-title">Selected work.</h2>
+        <div class="grid">
+
+          <!-- To add a project: copy one <article class="card"> block -->
+          <article class="card reveal">
+            <h3>Biblioteca<span> — Microservices Book Tracker</span></h3>
+            <p>Book-tracking platform built as independent Spring Boot microservices behind an API gateway, with Eureka discovery, a Spring Cloud Config server, and OAuth2/JWT auth.</p>
+            <div class="tags"><span>Java 21</span><span>Spring Cloud</span><span>Eureka</span><span>OAuth2</span><span>PostgreSQL</span><span>Angular</span><span>Docker</span></div>
+            <a class="card-link" href="https://github.com/ayashaJui/book_tracking" target="_blank" rel="noopener">Repository →</a>
+          </article>
+
+          <article class="card reveal">
+            <h3>Ink &amp; Paper<span> — Online Bookstore</span></h3>
+            <p>Full-stack bookstore with cart and checkout, community blogs, reviews, and a role-based admin dashboard.</p>
+            <div class="tags"><span>React</span><span>Redux</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/ayashaJui/bookstore_ink_paper" target="_blank" rel="noopener">Repository →</a>
+              <a class="card-link" href="https://inkandpaper-frontend.onrender.com" target="_blank" rel="noopener">Live →</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3>StudyNest<span> — Interview-Prep Platform</span></h3>
+            <p>Topics, notes, flashcards with SM-2 spaced repetition, quizzes, and a coding-problem tracker.</p>
+            <div class="tags"><span>Next.js 16</span><span>NestJS</span><span>TypeScript</span><span>MongoDB</span></div>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/ayashaJui/study_prep_manager" target="_blank" rel="noopener">Repository →</a>
+              <a class="card-link" href="https://studynest-z0r3.onrender.com" target="_blank" rel="noopener">Live →</a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h3>TourVille<span> — Tourism Management</span></h3>
+            <p>Multi-role system for tourists, agencies, and admins, with booking and payment flows. University project.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>Bootstrap 5</span></div>
+            <div class="card-links">
+              <a class="card-link" href="https://github.com/ayashaJui/CSEKU_WPL_2020_tourville" target="_blank" rel="noopener">Repository →</a>
+              <a class="card-link" href="https://youtu.be/jrAbrGvxJOE" target="_blank" rel="noopener">Demo →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <p class="section-label">04 — Skills</p>
+        <h2 class="section-title">The toolkit.</h2>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Languages</h3>
+            <p>Java · TypeScript · JavaScript · Python · PHP · SQL</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Backend</h3>
+            <p>Spring Boot · Spring Security · Spring Data JPA / Hibernate · Node.js · Express · NestJS · FastAPI</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Architecture</h3>
+            <p>Microservices · REST APIs · Event-Driven Architecture · Distributed Systems · System Design</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Data &amp; Messaging</h3>
+            <p>PostgreSQL · Microsoft SQL Server · MySQL · MongoDB · Kafka · RabbitMQ</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frontend</h3>
+            <p>Angular (PrimeNG) · React · Next.js · Redux · Tailwind CSS</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>DevOps &amp; Tools</h3>
+            <p>Docker · Git · CI/CD · OAuth2 / JWT · IntelliJ IDEA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PUBLICATION ================= -->
+    <section class="section" id="publication">
+      <div class="wrap">
+        <p class="section-label">05 — Publication</p>
+        <h2 class="section-title">Research.</h2>
+        <div class="pub reveal">
+          <h3>A CNN Based Approach to Classify Skin Cancers using Transfer Learning</h3>
+          <p>IEEE · 25th International Conference on Computer Information Technology (ICCIT 2022)</p>
+          <a class="card-link" href="https://doi.org/10.1109/ICCIT57492.2022.10055838" target="_blank" rel="noopener">Read the paper (DOI) →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= CONTACT / FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="wrap">
+      <p class="section-label">06 — Contact</p>
+      <h2 class="footer-title">Let's build something reliable.</h2>
+      <p class="footer-sub">Open to conversations about backend, distributed systems, and FinTech.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:ayashajui1110@gmail.com">ayashajui1110@gmail.com</a>
+        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/ayashaJui" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ayasha-hossain-jui/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://leetcode.com/u/ayashaJui/" target="_blank" rel="noopener">LeetCode</a>
+      </div>
+      <p class="copy">© <span id="year"></span> Ayasha Hossain Jui</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
